@@ -1,6 +1,7 @@
 import React from 'react';
 import Carousel, { CarouselI } from '../../Components/Carousel';
 import ProjectsAndEngineeringItem from './ProjectsAndEngineering';
+import AboutTheCompany from '../../Components/AboutCompany';
 
 
 const Banner: CarouselI[] = [
@@ -42,31 +43,32 @@ const Banner: CarouselI[] = [
     }
 ]
 
+// <Carousel carousels={Banner} />
 
 
 const Home = () => {
 
     return (
         <div className='w-full py-6'>
-            <div className='w-full h-128'>
+            <div className='w-full h-96 sm:h-128'>
                 <Carousel carousels={Banner} />
             </div>
-            <hr className='my-12' />
+            <hr className='my-6' />
             <div className='w-full'>
                 <div className='flex flex-row justify-between items-center mb-6'>
                     <p className='text-3xl text-gray-700 font-bold'>First Atlantic Services</p>
-                    <p className='text-blue-900'>Projects and Engineering</p>
+                    <p className='text-blue-900 text-right'>Projects and Engineering</p>
                 </div>
                 <div className='w-16 h-1 bg-blue-900 mb-3' />
-                <div className='w-full flex flex-row mt-12'>
-                    <div className='w-full md:w-1/4 pr-6'>
+                <div className='w-full mt-12 grid grid-flow-row gap-6 sm:grid-flow-col sm:grid-cols-6'>
+                    <div className='w-full sm:col-span-2 sm:pr-6'>
                         <p className='text-xl text-gray-800'>
-                            At First Atlantic Industrial Group, we are a collection of companies primarily dedicated to the industrial sector. 
-                            Our focus spans across various industries, including 
-                            mining, 
-                            energy, 
+                            At First Atlantic Industrial Group, we are a collection of companies primarily dedicated to the industrial sector.
+                            Our focus spans across various industries, including
+                            mining,
+                            energy,
                             construction,
-                            real estate, and 
+                            real estate, and
                             manufacturing, operating in a handlful countries worldwide.</p>
                         <p className='text-gray-700 mt-6'>
                             Thanks to the visionary leadership of our founders, the Group is poised for remarkable progress and promising opportunities. We anticipate significant milestones in terms of market exploration, project commencement, and successful completion.</p>
@@ -76,18 +78,36 @@ const Home = () => {
                         <p className='text-gray-700 mt-6'>
                             We have a significant presence in Africa, particularly in Nigeria. In recent times, we have actively participated in the real estate and construction as well as mining and quarrying sectors, achieving outstanding results and gaining valuable experience in emerging markets.</p>
                         <p className='text-gray-700 mt-6'>
-                            As the world embraces the shift toward sustainable energy, we are taking significant steps to expand our operations in this sector, with a particular focus on Europe and America. Our Research and Development team, along with our Advanced Operations team, is actively exploring opportunities on a global scale.
+                            As the world embraces the shift toward sustainable energy, we are taking significant steps to expand our operations in this sector, with a particular focus on Europe and America.
+                        </p>
+                        <p className='text-gray-700 mt-6'>
+                            Our Research and Development team, along with our Advanced Operations team, is actively exploring opportunities on a global scale.
                         </p>
                         <p className='text-gray-700 mt-6 italic font-bold'>
                             We are actively seeking partners and investors worldwide. If you believe you can contribute to our vision, whether as an investor or a technical expert, please don't hesitate to get in touch with us.
                         </p>
-                        <button className='mt-6 bg-blue-900 text-white px-9 py-3 hover:bg-blue-950 transition-all duration-500 ease-in-out hover:ml-6' type='button'>
+                        <button className='w-full md:w-fit mt-6 bg-blue-900 text-white px-9 py-3 hover:bg-blue-950 transition-all duration-500 ease-in-out' type='button'>
                             Contact Us
                         </button>
                     </div>
-                    <div className='sm:w-full md:w-3/4'>
-                        <ProjectsAndEngineeringItem />
+                    <div className='sm:mt-6 sm:col-span-4'>
+                        <ProjectsAndEngineeringItem length={9} />
+                        <p><a href='#' className='text-blue-900 underline hover:text-blue-700 transition-colors duration-500 ease-in-out'>More on Projects & Engineering &rarr;</a></p>
                     </div>
+                </div>
+            </div>
+            <hr className='my-6' />
+            <div className='w-full'>
+                <AboutTheCompany />
+            </div>
+            <hr className='my-6' />
+            <div className=' text-white flex-col justify-center px-16 flex w-full h-128 overflow-hidden bg-cover bg-[url(https://img.freepik.com/premium-photo/algorithm-flow-artificial-intelligence-technology-global-big-data-storage-network-futuristic-science-background-3d-rendering_634443-681.jpg)] '>
+                <p className='text-xl md:text-5xl font-bold'>We're actively seeking technical experts!</p>
+                <p className='md:w-1/2 md:text-xl mt-3 bg-black bg-opacity-40 p-3'>We are always on the lookout for technical industrial experts, whether you're at the beginning of your career or a seasoned professional. If you have the skills and passion it takes, we invite you to reach out to us and be a part of our exciting research and investment endeavors!
+                </p>
+                <div className='mt-3'>
+                    <button className='shadow-3xl w-full md:w-fit px-6 py-3 bg-blue-950 text-white text-lg mr-6'>I am an experienced professional</button>
+                    <button className='shadow-3xl w-full md:w-fit px-6 py-3 bg-black text-white text-lg mt-3'>I am young professional</button>
                 </div>
             </div>
         </div>
