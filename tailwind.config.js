@@ -7,6 +7,9 @@ module.exports = {
     extend: {
       fontFamily: {
         manrope: ['Manrope']
+      },
+      height: {
+        '128': '32rem',
       }
     },
   },
