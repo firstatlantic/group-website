@@ -19,7 +19,7 @@ const Carousel = ({ carousels }: { carousels: CarouselI[] }) => {
             if (next >= carousels.length)
                 next = 0
             setIndex(next)
-        }, 7000);
+        }, 8000);
         return () => clearInterval(interval);
     }, [index]);
 
@@ -30,14 +30,14 @@ const Carousel = ({ carousels }: { carousels: CarouselI[] }) => {
                 width > 0 && <div style={{ width: carousels.length * width, marginLeft: index * -width }}
                     className='flex flex-row transition-all duration-500 ease-out'>
                     {
-                        carousels.map(({img, link, title, subtitle, actionText, textColor = "text-white"}) => (
+                        carousels.map(({ img, link, title, subtitle, actionText, textColor = "text-white" }) => (
                             <div className={"h-full flex flex-col justify-center relative px-24 " + textColor} style={{ width }}>
                                 <div className='absolute top-0 left-0 bottom-0 right-0 z-0'>
                                     <img className='w-full h-full overflow-hidden object-cover' src={img} />
                                 </div>
-                                <div className='z-10 w-fit px-6 py-12'>
-                                    <p className='font-bold text-3xl'>{title}</p>
-                                    <p className='text-lg my-4'>{subtitle}</p>
+                                <div className='z-10 w-full px-6 py-12'>
+                                    <p className='font-bold text-3xl w-1/2'>{title}</p>
+                                    <p className='text-lg my-4 w-1/2'>{subtitle}</p>
                                     <button className='w-fit shadow-xl bg-blue-950 px-6 py-3 text-white hover:bg-opacity-80' type='button'>
                                         <a href={link} target='_blank'>{actionText}</a>
                                     </button>
