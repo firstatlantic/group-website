@@ -43,7 +43,6 @@ const Banner: CarouselI[] = [
     }
 ]
 
-// <Carousel carousels={Banner} />
 
 
 const Home = () => {
@@ -92,7 +91,7 @@ const Home = () => {
                     </div>
                     <div className='sm:mt-6 sm:col-span-4'>
                         <ProjectsAndEngineeringItem length={9} />
-                        <p><a href='#' className='text-blue-900 underline hover:text-blue-700 transition-colors duration-500 ease-in-out'>More on Projects & Engineering &rarr;</a></p>
+                        <p><a href='/' className='text-blue-900 underline hover:text-blue-700 transition-colors duration-500 ease-in-out'>More on Projects & Engineering &rarr;</a></p>
                     </div>
                 </div>
             </div>
