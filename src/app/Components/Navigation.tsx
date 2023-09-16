@@ -1,4 +1,5 @@
 import React from 'react';
+import { ProjectsAndEngineeringItems } from '../Pages/Home/ProjectsAndEngineering';
 
 interface RouteI { title: string, link: string }
 
@@ -61,48 +62,7 @@ const Routes: { title: string, id: string, children: RouteI[] }[] = [
     {
         title: "Projects and Engineering",
         id: "ind",
-        children: [
-            {
-                title: "Mining and Processing Plants",
-                link: ""
-            },
-            {
-                title: "Solar Power Plants",
-                link: ""
-            },
-            {
-                title: "Wind Farms",
-                link: ""
-            },
-            {
-                title: "Electrical Substations",
-                link: ""
-            },
-            {
-                title: "Hydro Electric Power Stations",
-                link: ""
-            },
-            {
-                title: "Gas Turbine Power Plants",
-                link: ""
-            },
-            {
-                title: "Waste Treatment Plants",
-                link: ""
-            },
-            {
-                title: "Paper Manufacturing",
-                link: ""
-            },
-            {
-                title: "Hotels and Building Construction",
-                link: ""
-            },
-            {
-                title: "Roads and Bridges Construction",
-                link: ""
-            }
-        ]
+        children: ProjectsAndEngineeringItems
     },
     {
         title: "News and Events",
@@ -122,7 +82,7 @@ const Navigation = () => {
             {
                 Routes.map((route) => (
                     <li className='group h-full'>
-                        <button type='button' className='text-lg font-bold py-9 hover:text-blue-900'>
+                        <button type='button' className='text-lg xl:text-xl font-bold py-9 hover:text-blue-900'>
                             {route.title}
                             {
                                 route.children.length > 0 && <span className='ml-3 text-gray-400'>

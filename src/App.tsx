@@ -3,7 +3,7 @@ import store from "./dux/store";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Provider } from "react-redux";
 import PageWrapper from './app/Components/PageWrapper';
-import Home from './app/Pages/Home';
+import Home from './app/Pages/Home/Home';
 
 function App() {
     return (

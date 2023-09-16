@@ -36,8 +36,8 @@ const Carousel = ({ carousels }: { carousels: CarouselI[] }) => {
                                     <img className='w-full h-full overflow-hidden object-cover' src={img} />
                                 </div>
                                 <div className='z-10 w-full px-6 py-12'>
-                                    <p className='font-bold text-3xl w-1/2'>{title}</p>
-                                    <p className='text-lg my-4 w-1/2'>{subtitle}</p>
+                                    <p className='font-bold text-3xl'>{title}</p>
+                                    <p className='text-lg my-4 md:w-3/4 sm:w-full'>{subtitle}</p>
                                     <button className='w-fit shadow-xl bg-blue-950 px-6 py-3 text-white hover:bg-opacity-80' type='button'>
                                         <a href={link} target='_blank'>{actionText}</a>
                                     </button>
