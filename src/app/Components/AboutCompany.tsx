@@ -37,7 +37,7 @@ const AboutTheCompany = () => {
                     </div>
                 </div>
                 <div className='h-58 w-full overflow-hidden md:col-span-2'>
-                    <img src='https://images.pexels.com/photos/313737/pexels-photo-313737.jpeg' className='object-cover'></img>
+                    <img alt='' src='https://images.pexels.com/photos/313737/pexels-photo-313737.jpeg' className='object-cover'></img>
                 </div>
             </div>
         </div>
