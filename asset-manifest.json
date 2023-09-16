@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/firstatlantic/group-website/static/css/main.c531184f.css",
+    "main.js": "/firstatlantic/group-website/static/js/main.33d7003f.js",
+    "static/js/787.cda612ba.chunk.js": "/firstatlantic/group-website/static/js/787.cda612ba.chunk.js",
+    "index.html": "/firstatlantic/group-website/index.html",
+    "main.c531184f.css.map": "/firstatlantic/group-website/static/css/main.c531184f.css.map",
+    "main.33d7003f.js.map": "/firstatlantic/group-website/static/js/main.33d7003f.js.map",
+    "787.cda612ba.chunk.js.map": "/firstatlantic/group-website/static/js/787.cda612ba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c531184f.css",
+    "static/js/main.33d7003f.js"
+  ]
+}
