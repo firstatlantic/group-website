@@ -14,7 +14,7 @@ const PageWrapper = (props: any) => {
                 </div>
             </div>
             <hr className='w-full m-0 p-0' />
-            <div className='mx-auto md:w-4/4 lg:w-3/4 xl:w-5/7 px-6 md:px-0'>
+            <div className='px-6 md:px-0 md:mx-auto md:w-4/4 lg:w-3/4 xl:w-5/7'>
                 {props.children}
             </div>
             <hr className='w-full m-0 p-0' />

@@ -1,6 +1,6 @@
 import React from 'react';
 import Carousel, { CarouselI } from '../../Components/Carousel';
-import ProjectsAndEngineeringItem from './ProjectsAndEngineering';
+import ProjectsAndEngineeringItem, { getLink } from './ProjectsAndEngineering';
 import AboutTheCompany from '../../Components/AboutCompany';
 
 
@@ -46,7 +46,7 @@ const Banner: CarouselI[] = [
 const Home = () => {
 
     return (
-        <div className='w-full py-6'>
+        <div className='w-full py-6 px-6'>
             <div className='w-full h-96 sm:h-128'>
                 <Carousel carousels={Banner} />
             </div>
@@ -89,7 +89,7 @@ const Home = () => {
                     </div>
                     <div className='sm:mt-6 sm:col-span-4'>
                         <ProjectsAndEngineeringItem length={9} />
-                        <p><a href='/' className='text-blue-900 underline hover:text-blue-700 transition-colors duration-500 ease-in-out'>More on Projects & Engineering &rarr;</a></p>
+                        <p><a href={getLink()} className='text-blue-900 underline hover:text-blue-700 transition-colors duration-500 ease-in-out'>More on Projects & Engineering &rarr;</a></p>
                     </div>
                 </div>
             </div>

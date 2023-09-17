@@ -1,12 +1,14 @@
 import React from 'react';
-import { ProjectsAndEngineeringItems } from '../Pages/Home/ProjectsAndEngineering';
+import { ProjectsAndEngineeringItems, getLink } from '../Pages/Home/ProjectsAndEngineering';
+import { useLocation } from 'react-router-dom';
 
 interface RouteI { title: string, link: string }
 
-export const Routes: { title: string, id: string, children: RouteI[] }[] = [
+export const Routes: { title: string, id: string, children: RouteI[], link: string }[] = [
     {
         title: "About Us",
         id: "aboutus",
+        link: "about-us",
         children: [
             {
                 title: "About the Company",
@@ -33,6 +35,7 @@ export const Routes: { title: string, id: string, children: RouteI[] }[] = [
     {
         title: "Focus Industries",
         id: "ind",
+        link: "focus-industries",
         children: [{
             title: "Real Estate and Construction",
             link: ""
@@ -62,26 +65,30 @@ export const Routes: { title: string, id: string, children: RouteI[] }[] = [
     {
         title: "Projects and Engineering",
         id: "ind",
+        link: getLink(),
         children: ProjectsAndEngineeringItems
     },
     {
         title: "News and Events",
         id: "ind",
+        link: "news-and-events",
         children: []
     },
     {
         title: "Contact Us",
         id: "ind",
+        link: "contact-us",
         children: []
     }
 ]
 
 const Navigation = () => {
+    const { pathname } = useLocation();
     return (
         <ul className='flex flex-row w-full justify-around h-full'>
             {
                 Routes.map((route) => (
-                    <li className='group h-full'>
+                    <li className={`group h-full ${pathname.includes(route.link) ? 'border-b-4 border-blue-900' : ''}`}>
                         <button type='button' className='text-lg xl:text-xl font-bold py-9 hover:text-blue-900'>
                             {route.title}
                             {

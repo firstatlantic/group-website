@@ -23,7 +23,7 @@ const MobileNavigation = () => {
                                 {
                                     route.children.map(child => (
                                         <p className='p-5 border-b border-gray-00 text-xl font-light last:border-none last:pb-0'>
-                                            <a href='/'>{child.title}</a>
+                                            <a href={child.link}>{child.title}</a>
                                         </p>
                                     ))
                                 }
