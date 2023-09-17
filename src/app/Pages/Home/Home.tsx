@@ -46,7 +46,7 @@ const Banner: CarouselI[] = [
 const Home = () => {
 
     return (
-        <div className='w-full py-6 px-6'>
+        <div className='w-full py-6 px-6 md:px-0'>
             <div className='w-full h-96 sm:h-128'>
                 <Carousel carousels={Banner} />
             </div>

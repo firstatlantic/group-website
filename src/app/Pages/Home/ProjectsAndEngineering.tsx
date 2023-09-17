@@ -1,6 +1,7 @@
 import React from 'react';
 import { ServiceItem } from '../../typings/Base';
 import PageNotYetAvailable from '../../Components/PageNotAvailable';
+import HotelsAndBuildingConstruction from '../Engineering/Constructions/HotelsAndBuildingConstructions';
 
 export const getLink = (child: string = ""): string => {
     return `/projects-and-engineering/${child}`
@@ -20,7 +21,7 @@ export const ProjectsAndEngineeringItems: ServiceItem[] =
             link: getLink("hotels-and-building-construction"),
             img: "https://lh3.googleusercontent.com/pw/AIL4fc-CTFV5tGYTnp9sqiyfiQPkLZ_QI1z_br3ccBBmFo4dgQE84WV0PKC_q-wogcmWxUzFySAHGuPq8Ug2b3CM5UN8o7mBfdKhHjdmnGS3qz8U6o3qf0Uu=w2400",
             description: "We excel in the luxury residential and hotel building industry, offering comprehensive services from design to turnkey construction and handover."
-            , page: <PageNotYetAvailable />
+            , page: <HotelsAndBuildingConstruction />
         },
         {
             title: "Solar Power Plants",

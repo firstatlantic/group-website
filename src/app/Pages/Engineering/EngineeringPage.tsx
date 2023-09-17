@@ -4,8 +4,7 @@ import { useLocation } from 'react-router-dom'
 import BreadCrumbs, { CrumbsI } from '../../Components/BreadCrumbs'
 
 
-
-export const EngineeringPageWrapper = ({title, children, crumbs = []}: {title: string, children: any, crumbs?: CrumbsI[]}) => {
+export const EngineeringPageWrapper = ({ title, children, crumbs = [] }: { title: string, children: any, crumbs?: CrumbsI[] }) => {
     const { pathname } = useLocation();
     return (
         <div className='py-6'>
@@ -18,9 +17,12 @@ export const EngineeringPageWrapper = ({title, children, crumbs = []}: {title: s
                             ProjectsAndEngineeringItems.map(item => {
                                 const isActive = pathname.includes(item.link)
                                 return (
-                                    <li className={`md:p-5 md:pl-6 md:text-lg md:mr-0 pb-6 mr-3 min-w-fit ${isActive ? 'border-b-2 border-blue-900 font-bold' : ''}`}>
-                                        <a href={item.link}>{item.title} {isActive}</a>
-                                    </li>
+                                    <a href={item.link}>
+                                        <li className={`md:p-5 md:pl-6 md:text-lg md:mr-0 mr-3 whitespace-nowrap p-3 min-w-fit ${isActive ? 'text-white bg-blue-950 font-bold' : ''}`}>
+                                            {item.title}
+                                        </li>
+                                    </a>
+
                                 )
                             })
                         }
