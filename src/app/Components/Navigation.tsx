@@ -3,7 +3,7 @@ import { ProjectsAndEngineeringItems } from '../Pages/Home/ProjectsAndEngineerin
 
 interface RouteI { title: string, link: string }
 
-const Routes: { title: string, id: string, children: RouteI[] }[] = [
+export const Routes: { title: string, id: string, children: RouteI[] }[] = [
     {
         title: "About Us",
         id: "aboutus",

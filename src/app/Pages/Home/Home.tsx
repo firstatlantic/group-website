@@ -43,8 +43,6 @@ const Banner: CarouselI[] = [
     }
 ]
 
-
-
 const Home = () => {
 
     return (
@@ -100,7 +98,7 @@ const Home = () => {
                 <AboutTheCompany />
             </div>
             <hr className='my-6' />
-            <div className=' text-white flex-col justify-center px-16 flex w-full h-128 overflow-hidden bg-cover bg-[url(https://img.freepik.com/premium-photo/algorithm-flow-artificial-intelligence-technology-global-big-data-storage-network-futuristic-science-background-3d-rendering_634443-681.jpg)] '>
+            <div className=' text-white flex-col justify-center px-6 md:px-16 flex w-full h-fit py-6 md:py-0 md:h-128 overflow-hidden bg-cover bg-[url(https://img.freepik.com/premium-photo/algorithm-flow-artificial-intelligence-technology-global-big-data-storage-network-futuristic-science-background-3d-rendering_634443-681.jpg)] '>
                 <p className='text-xl md:text-5xl font-bold'>We're actively seeking technical experts!</p>
                 <p className='md:w-1/2 md:text-xl mt-3 bg-black bg-opacity-40 p-3'>We are always on the lookout for technical industrial experts, whether you're at the beginning of your career or a seasoned professional. If you have the skills and passion it takes, we invite you to reach out to us and be a part of our exciting research and investment endeavors!
                 </p>
