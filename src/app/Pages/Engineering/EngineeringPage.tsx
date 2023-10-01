@@ -18,7 +18,7 @@ export const EngineeringPageWrapper = ({ title, children, crumbs = [] }: { title
                                 const isActive = pathname.includes(item.link)
                                 return (
                                     <a href={item.link}>
-                                        <li className={`md:p-5 md:pl-6 md:text-lg md:mr-0 mr-3 whitespace-nowrap p-3 min-w-fit ${isActive ? 'text-white bg-blue-950 font-bold' : ''}`}>
+                                        <li className={`md:p-5 md:pl-6 md:text-lg md:mr-0 mr-3 whitespace-wrap p-3 min-w-fit ${isActive ? 'text-white bg-blue-950 font-bold' : ''}`}>
                                             {item.title}
                                         </li>
                                     </a>
